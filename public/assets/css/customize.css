@@ -1,0 +1,37 @@
+.navbar {
+    background-color: black !important;
+  }
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: white !important; 
+    font-size: 20px;
+  }
+  /* .navbar .nav-link.disabled {
+    color: gray !important;
+  } */
+
+  /* Navbar dropdown menu styles */
+.navbar .dropdown-menu {
+  background-color: black;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: white !important;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  color: black !important;
+  background-color: white;
+} 
+
+.topic h2{ 
+  font-weight: 900; 
+  margin-top: 40px; 
+  text-decoration: underline;
+} 
+
+.img-home{
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 30px;
+}
