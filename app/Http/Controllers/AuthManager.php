@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -17,9 +18,9 @@ class AuthManager extends Controller
         return view('user.registration');
     } 
 
-    function admindashboard(){
-        return view('admin.dashboard');
-    }
+    // function admindashboard(){
+    //     return view('admin.dashboard');
+    // }
 
     function loginPost(Request $request){
         $request->validate([
@@ -60,4 +61,11 @@ class AuthManager extends Controller
         }
 
     }
+
+    // function logout(){
+    //     Auth::logout();
+    //     Session::flush();
+        
+    //     return redirect()->route('home');
+    // }
 };
